@@ -6,7 +6,7 @@ import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Button from 'react-bootstrap/Button';
+//import Button from 'react-bootstrap/Button';
 
 
 const App = () => {
@@ -34,19 +34,28 @@ const App = () => {
   return (
     //sets container as fluid up until screen size of 720px width
     <Container fluid>
-      <Row>
-        <Col>Default font size</Col>
-        <Col xs='8'>
-          <h1>Codon Translation</h1>
-          <h3>A lookup tool for the 20 amino acids encoded by the human genetic code.</h3>
+      <Row className="row-header">
+        <Col>
         </Col>
-        <Col><Button>Help</Button></Col>
-      </Row>
-      <Row>
-        <h3>Enter A, U, C or G:</h3>
-      </Row>
-      <Row>
-        <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+        <Col sm='8' className="title">
+          <h1>Codon Translation</h1>
+          <Row className="d.flex justify-content-space-between">
+            <Col></Col>
+            <Col sm='10'>
+              <h2>A lookup tool for the 20 amino acids encoded by the human genetic code.</h2>
+              <br />
+            </Col>
+            <Col></Col>
+          </Row>
+          <Row className="px-4 d-flex justify-content-center">
+            Enter A, U, C or G:
+            <br />
+            <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+          </Row>
+        </Col>
+        <Col className="d-flex justify-content-end align-top">
+          ? help
+        </Col>
       </Row>
       <Row>
         <ProteinList protein={protein} setProtein={setProtein} />

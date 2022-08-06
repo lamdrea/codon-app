@@ -41,29 +41,40 @@ $grid-gutter-width: 1.75rem;
 h1 {
     font-family: Inter;
     font-weight: bold;
+    font-size: 68px;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-family: Roboto Mono;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 h3 {
     font-family: Roboto Mono;
     font-weight: 300;
-    color: $secondary;
+}
+
+.row-header {
+    background-color: $primary;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 3;
+}
+
+.title {
+    align-items: middle;
+    text-align: center;
+    margin: auto;
+    padding-top: $spacer * 4;
 }
 
 .container-fluid {
     background-color: #FEFDF8;
-    // background-color: black;
-    //margin-left: 100px;
-    margin-right: 200px;
 }
 
-.col {
-    border-color: black;
-    border-width: 1px;
-    border-style: solid;
-}
-
-//set left-right margin for large screen (1440p), rem * 14
-.mx-lg-14 {
-    margin-left: $spacer * 14;
-    margin-right: $spacer * 14;
-}
+// .col {
+//     border-color: black;
+//     border-width: 1px;
+//     border-style: solid;
+// }
