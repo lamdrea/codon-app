@@ -1,0 +1,69 @@
+// overwrite theme variables
+
+//1. import functions (to manipulate colours, SVGs, calc, etc.)
+@import '../node_modules/bootstrap/scss/functions';
+
+//2. include any default variable overrides here
+$body-bg: #FEFDF8;
+$body-color: #18336D;
+$primary: #64C4CC;
+$secondary: #FFB3A1;
+$font-size-root: 16px;
+$grid-gutter-width: 1.75rem;
+
+
+//3. include remainder of required bootstrap stylesheets
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '../node_modules/bootstrap/scss/maps';
+
+// //4. include any optional bootstrap components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import '../node_modules/bootstrap/scss/type';
+@import '../node_modules/bootstrap/scss/images';
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/buttons';
+@import '../node_modules/bootstrap/scss/forms';
+@import '../node_modules/bootstrap/scss/card';
+@import '../node_modules/bootstrap/scss/utilities';
+
+//5. add your custom code here.
+//importing the font
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto+Mono:wght@300;700&display=swap');
+
+
+:root {
+    --bs-body-font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-family: Inter;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Roboto Mono;
+    font-weight: 300;
+    color: $secondary;
+}
+
+.container-fluid {
+    background-color: #FEFDF8;
+    // background-color: black;
+    //margin-left: 100px;
+    margin-right: 200px;
+}
+
+.col {
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+//set left-right margin for large screen (1440p), rem * 14
+.mx-lg-14 {
+    margin-left: $spacer * 14;
+    margin-right: $spacer * 14;
+}

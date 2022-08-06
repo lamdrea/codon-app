@@ -3,7 +3,10 @@ import './App.css';
 import ProteinList from './components/ProteinList';
 import CodonSearchBox from './components/CodonSearchBox';
 import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
-
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 
 
 const App = () => {
@@ -29,16 +32,26 @@ const App = () => {
   }, [searchInput]);
 
   return (
-    <div className="App">
-      {
-        <>
-          <h1>Interactive Protein-Codon Tool</h1>
-          <h3>Enter A, U, C or G:</h3>
-          <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
-          <ProteinList protein={protein} setProtein={setProtein} />
-        </>
-      }
-    </div>
+    //sets container as fluid up until screen size of 720px width
+    <Container fluid>
+      <Row>
+        <Col>Default font size</Col>
+        <Col xs='8'>
+          <h1>Codon Translation</h1>
+          <h3>A lookup tool for the 20 amino acids encoded by the human genetic code.</h3>
+        </Col>
+        <Col><Button>Help</Button></Col>
+      </Row>
+      <Row>
+        <h3>Enter A, U, C or G:</h3>
+      </Row>
+      <Row>
+        <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+      </Row>
+      <Row>
+        <ProteinList protein={protein} setProtein={setProtein} />
+      </Row>
+    </Container>
   );
 };
 
