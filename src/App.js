@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import './App.css';
 import ProteinList from './components/ProteinList';
 import CodonSearchBox from './components/CodonSearchBox';
 import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
@@ -48,9 +47,10 @@ const App = () => {
             <Col></Col>
           </Row>
           <Row className="px-4 d-flex justify-content-center">
-            Enter A, U, C or G:
-            <br />
-            <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+            <Col>
+              <center>Search by codon. Enter A, U, C or G:</center>
+              <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
+            </Col>
           </Row>
         </Col>
         <Col className="d-flex justify-content-end align-top">

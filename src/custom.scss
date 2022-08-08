@@ -38,6 +38,9 @@ $grid-gutter-width: 1.75rem;
     --bs-body-font-family: 'Inter', sans-serif;
 }
 
+html {
+   overflow-y: scroll; 
+}
 h1 {
     font-family: Inter;
     font-weight: bold;
@@ -63,7 +66,7 @@ h3 {
 }
 
 .title {
-    align-items: middle;
+
     text-align: center;
     margin: auto;
     padding-top: $spacer * 4;
@@ -71,6 +74,20 @@ h3 {
 
 .container-fluid {
     background-color: #FEFDF8;
+}
+
+.searchBox {
+    font-family: Roboto Mono;
+    font-size: 48px;
+    font-weight: 700;
+    color: $body-color;
+    border: 0px;
+    height: 1.85em;
+    width: 3em;
+    letter-spacing: .1em;
+    text-align: center;
+    margin-top: $spacer * .5;
+    padding-right: 0;
 }
 
 // .col {
