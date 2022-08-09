@@ -83,15 +83,11 @@ h3 {
     color: $body-color;
     border: 0px;
     height: 1.85em;
-    width: 3em;
+    width: 1.3em;
     letter-spacing: .1em;
     text-align: center;
     margin-top: $spacer * .5;
-    padding-right: 0;
+    margin-left: $spacer *.25;
+    margin-right: $spacer *.25;
+    padding-right: 0; //necessary to center the input
 }
-
-// .col {
-//     border-color: black;
-//     border-width: 1px;
-//     border-style: solid;
-// }

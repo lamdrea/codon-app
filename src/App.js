@@ -19,15 +19,14 @@ const App = () => {
 
   useEffect(() => {
     // Everytime there's an event.. run this
-    // When searchInput legnth = 3, find the matching codon in lookup chart, 
-    // and setProtein to the matching object.
-    // However, reset to all proteins if searchInput length = 0.
-    if (searchInput.length === 3) {
-      setProtein(_fetch_protein_by_codon(searchInput));
-    }
-    else if (searchInput.length === 0) {
+    // When searchInput length = 3 and there are no empty strings, fetch the matching protein
+    // Otherwise, reset to show all proteins
+    if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
+      setProtein(_fetch_protein_by_codon(Object.values(searchInput).join('')));
+    } else {
       setProtein(_fetch_proteins());
     }
+
   }, [searchInput]);
 
   return (
