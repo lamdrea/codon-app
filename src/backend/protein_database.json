@@ -17,7 +17,7 @@
       "GCA",
       "GCG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/L-Alanin_-_L-Alanine.svg/320px-L-Alanin_-_L-Alanine.svg.png",
     "id": 1
   },
   "arginine": {
@@ -30,7 +30,7 @@
       "AGA",
       "AGG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg/509px-Latte_at_Doppio_Ristretto_Chiang_Mai_01.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Arginin_-_Arginine.svg/640px-Arginin_-_Arginine.svg.png",
     "id": 2
   },
   "asparagine": {
@@ -39,7 +39,7 @@
       "AAU",
       "AAC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Wet_Cappuccino_with_heart_latte_art.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/L-Asparagin_-_L-Asparagine.svg/640px-L-Asparagin_-_L-Asparagine.svg.png",
     "id": 3
   },
   "aspartic acid": {
@@ -48,7 +48,7 @@
       "GAU",
       "GAC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg/1280px-Hokitika_Cheese_and_Deli%2C_Hokitika_%283526706594%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg/640px-L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg.png",
     "id": 4
   },
   "cysteine": {
@@ -57,7 +57,7 @@
       "UGU",
       "UGC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Tazzina_di_caff%C3%A8_a_Ventimiglia.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/L-Cystein_-_L-Cysteine.svg/640px-L-Cystein_-_L-Cysteine.svg.png",
     "id": 5
   },
   "glutamine": {
@@ -66,7 +66,7 @@
       "CAA",
       "CAG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Doppio.jpg/2560px-Doppio.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/L-Glutamin_-_L-Glutamine.svg/640px-L-Glutamin_-_L-Glutamine.svg.png",
     "id": 6
   },
   "glutamic acid": {
@@ -75,7 +75,7 @@
       "GAA",
       "GAG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Caf%C3%A9Cortado%28Tallat%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg/640px-L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg.png",
     "id": 7
   },
   "glycine": {
@@ -86,7 +86,7 @@
       "GGA",
       "GGG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Linea_doubleespresso.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Glycine-2D-skeletal.png/640px-Glycine-2D-skeletal.png",
     "id": 8
   },
   "histidine": {
@@ -95,7 +95,7 @@
       "CAU",
       "CAC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Gal%C3%A3o.jpg/1280px-Gal%C3%A3o.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/L-Histidine_physiological.svg/640px-L-Histidine_physiological.svg.png",
     "id": 9
   },
   "isoleucine": {
@@ -105,7 +105,7 @@
       "AUC",
       "AUA"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Caff%C3%A8_lungo.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/L-Isoleucin_-_L-Isoleucine.svg/640px-L-Isoleucin_-_L-Isoleucine.svg.png",
     "id": 10
   },
   "leucine": {
@@ -118,7 +118,7 @@
       "CUA",
       "CUG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/07/Caff%C3%A8_Espresso_Macchiato_Schiumato.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/L-Leucine.svg/640px-L-Leucine.svg.png",
     "id": 11
   },
   "lysine": {
@@ -127,7 +127,7 @@
       "AAA",
       "AAG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Mocaccino-Coffee.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/L-Lysin_-_L-Lysine.svg/640px-L-Lysin_-_L-Lysine.svg.png",
     "id": 12
   },
   "methionine": {
@@ -135,7 +135,7 @@
     "codon": [
       "AUG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/Doppio_ristretto_Chiang_Mai.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Methionin_-_Methionine.svg/640px-Methionin_-_Methionine.svg.png",
     "id": 13
   },
   "phenylalanine": {
@@ -144,7 +144,7 @@
       "UUU",
       "UUC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Flat_white_coffee_with_pretty_feather_pattern.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/L-Phenylalanin_-_L-Phenylalanine.svg/640px-L-Phenylalanin_-_L-Phenylalanine.svg.png",
     "id": 14
   },
   "proline": {
@@ -155,7 +155,7 @@
       "CCA",
       "CCG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/1/17/Vinoteca%2C_Smithfield%2C_London_%284485849609%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Prolin_-_Proline.svg/624px-Prolin_-_Proline.svg.png",
     "id": 15
   },
   "serine": {
@@ -168,7 +168,7 @@
       "AGU",
       "AGG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/0/06/Latte_art.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/L-Serin_-_L-Serine.svg/640px-L-Serin_-_L-Serine.svg.png",
     "id": 16
   },
   "threonine": {
@@ -179,7 +179,7 @@
       "ACA",
       "ACG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/6/61/Irish_coffee_glass.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/L-Threonin_-_L-Threonine.svg/640px-L-Threonin_-_L-Threonine.svg.png",
     "id": 17
   },
   "tryptophan": {
@@ -187,7 +187,7 @@
     "codon": [
       "UGG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/A_small_cup_of_coffee.JPG/640px-A_small_cup_of_coffee.JPG",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/L-Tryptophan_-_L-Tryptophan.svg/640px-L-Tryptophan_-_L-Tryptophan.svg.png",
     "id": 18
   },
   "tyrosine": {
@@ -196,7 +196,7 @@
       "UAU",
       "UAC"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/Cuban_coffee-_2013-04-05_14-30.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/L-Tyrosin_-_L-Tyrosine.svg/640px-L-Tyrosin_-_L-Tyrosine.svg.png",
     "id": 19
   },
   "valine": {
@@ -207,7 +207,7 @@
       "GUA",
       "GUG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg/640px-Agua_Panela_con_Queso_Fresco_at_La_Puerta_Falsa_%285617496209%29.jpg",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/L-valine-2D-skeletal.png/539px-L-valine-2D-skeletal.png",
     "id": 20
   }
 }
