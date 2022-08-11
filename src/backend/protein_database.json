@@ -17,6 +17,8 @@
       "GCA",
       "GCG"
     ],
+    "abbreviation-3": "Ala",
+    "abbreviation-1": "A",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/L-Alanin_-_L-Alanine.svg/320px-L-Alanin_-_L-Alanine.svg.png",
     "id": 1
   },
@@ -30,6 +32,8 @@
       "AGA",
       "AGG"
     ],
+    "abbreviation-3": "Arg",
+    "abbreviation-1": "R",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Arginin_-_Arginine.svg/640px-Arginin_-_Arginine.svg.png",
     "id": 2
   },
@@ -39,6 +43,8 @@
       "AAU",
       "AAC"
     ],
+    "abbreviation-3": "Asn",
+    "abbreviation-1": "N",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/L-Asparagin_-_L-Asparagine.svg/640px-L-Asparagin_-_L-Asparagine.svg.png",
     "id": 3
   },
@@ -48,6 +54,8 @@
       "GAU",
       "GAC"
     ],
+    "abbreviation-3": "Asp",
+    "abbreviation-1": "D",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg/640px-L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg.png",
     "id": 4
   },
@@ -57,25 +65,31 @@
       "UGU",
       "UGC"
     ],
+    "abbreviation-3": "Cys",
+    "abbreviation-1": "C",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/L-Cystein_-_L-Cysteine.svg/640px-L-Cystein_-_L-Cysteine.svg.png",
     "id": 5
   },
-  "glutamine": {
+  "glutamic acid": {
     "description": "A double shot of espresso, the doppio is perfect for putting extra pep in your step.",
     "codon": [
       "CAA",
       "CAG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/L-Glutamin_-_L-Glutamine.svg/640px-L-Glutamin_-_L-Glutamine.svg.png",
+    "abbreviation-3": "Glu",
+    "abbreviation-1": "E",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg/640px-L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg.png",
     "id": 6
   },
-  "glutamic acid": {
+  "glutamine": {
     "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
     "codon": [
       "GAA",
       "GAG"
     ],
-    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg/640px-L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg.png",
+    "abbreviation-3": "Gln",
+    "abbreviation-1": "Q",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/L-Glutamin_-_L-Glutamine.svg/640px-L-Glutamin_-_L-Glutamine.svg.png",
     "id": 7
   },
   "glycine": {
@@ -86,6 +100,8 @@
       "GGA",
       "GGG"
     ],
+    "abbreviation-3": "Gly",
+    "abbreviation-1": "G",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Glycine-2D-skeletal.png/640px-Glycine-2D-skeletal.png",
     "id": 8
   },
@@ -95,6 +111,8 @@
       "CAU",
       "CAC"
     ],
+    "abbreviation-3": "His",
+    "abbreviation-1": "H",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/L-Histidine_physiological.svg/640px-L-Histidine_physiological.svg.png",
     "id": 9
   },
@@ -105,6 +123,8 @@
       "AUC",
       "AUA"
     ],
+    "abbreviation-3": "Ile",
+    "abbreviation-1": "I",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/L-Isoleucin_-_L-Isoleucine.svg/640px-L-Isoleucin_-_L-Isoleucine.svg.png",
     "id": 10
   },
@@ -118,6 +138,8 @@
       "CUA",
       "CUG"
     ],
+    "abbreviation-3": "Leu",
+    "abbreviation-1": "L",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/L-Leucine.svg/640px-L-Leucine.svg.png",
     "id": 11
   },
@@ -127,6 +149,8 @@
       "AAA",
       "AAG"
     ],
+    "abbreviation-3": "Lys",
+    "abbreviation-1": "K",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/L-Lysin_-_L-Lysine.svg/640px-L-Lysin_-_L-Lysine.svg.png",
     "id": 12
   },
@@ -135,6 +159,8 @@
     "codon": [
       "AUG"
     ],
+    "abbreviation-3": "Met",
+    "abbreviation-1": "M",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Methionin_-_Methionine.svg/640px-Methionin_-_Methionine.svg.png",
     "id": 13
   },
@@ -144,6 +170,8 @@
       "UUU",
       "UUC"
     ],
+    "abbreviation-3": "Phe",
+    "abbreviation-1": "F",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/L-Phenylalanin_-_L-Phenylalanine.svg/640px-L-Phenylalanin_-_L-Phenylalanine.svg.png",
     "id": 14
   },
@@ -155,6 +183,8 @@
       "CCA",
       "CCG"
     ],
+    "abbreviation-3": "Pro",
+    "abbreviation-1": "P",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Prolin_-_Proline.svg/624px-Prolin_-_Proline.svg.png",
     "id": 15
   },
@@ -168,6 +198,8 @@
       "AGU",
       "AGG"
     ],
+    "abbreviation-3": "Ser",
+    "abbreviation-1": "S",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/L-Serin_-_L-Serine.svg/640px-L-Serin_-_L-Serine.svg.png",
     "id": 16
   },
@@ -179,6 +211,8 @@
       "ACA",
       "ACG"
     ],
+    "abbreviation-3": "Thr",
+    "abbreviation-1": "T",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/L-Threonin_-_L-Threonine.svg/640px-L-Threonin_-_L-Threonine.svg.png",
     "id": 17
   },
@@ -187,6 +221,8 @@
     "codon": [
       "UGG"
     ],
+    "abbreviation-3": "Trp",
+    "abbreviation-1": "W",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/L-Tryptophan_-_L-Tryptophan.svg/640px-L-Tryptophan_-_L-Tryptophan.svg.png",
     "id": 18
   },
@@ -196,6 +232,8 @@
       "UAU",
       "UAC"
     ],
+    "abbreviation-3": "Tyr",
+    "abbreviation-1": "Y",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/L-Tyrosin_-_L-Tyrosine.svg/640px-L-Tyrosin_-_L-Tyrosine.svg.png",
     "id": 19
   },
@@ -207,6 +245,8 @@
       "GUA",
       "GUG"
     ],
+    "abbreviation-3": "Val",
+    "abbreviation-1": "V",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/L-valine-2D-skeletal.png/539px-L-valine-2D-skeletal.png",
     "id": 20
   }
