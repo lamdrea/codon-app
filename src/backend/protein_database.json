@@ -10,7 +10,7 @@
     "id": 0
   },
   "alanine": {
-    "description": "Black coffee is as simple as it gets with ground coffee beans steeped in hot water, served warm. And if you want to sound fancy, you can call black coffee by its proper name: cafe noir.",
+    "description": "Alanine is a non-essential amino acid that is involved in sugar and acid metabolism, increasing immunity, and provides energy for muscles, brain tissue, and the central nervous system.",
     "codon": [
       "GCU",
       "GCC",
@@ -23,7 +23,7 @@
     "id": 1
   },
   "arginine": {
-    "description": "As the most popular coffee drink out there, the latte is comprised of a shot of espresso and steamed milk with just a touch of foam. It can be ordered plain or with a flavor shot of anything from vanilla to pumpkin spice.",
+    "description": "Arginine is an essential amino acid that plays an important role in cell division, wound healing, removing ammonia from the body, immune function, and the release of hormones.",
     "codon": [
       "CGU",
       "CGC",
@@ -38,7 +38,7 @@
     "id": 2
   },
   "asparagine": {
-    "description": "Cappuccino is a latte made with more foam than steamed milk, often with a sprinkle of cocoa powder or cinnamon on top. Sometimes you can find variations that use cream instead of milk or ones that throw in flavor shot, as well.",
+    "description": "Asparagine is a non-essential amino acid in humans and is involved in the metabolic control of cell functions in nerve and brain tissue.  ",
     "codon": [
       "AAU",
       "AAC"
@@ -49,7 +49,7 @@
     "id": 3
   },
   "aspartic acid": {
-    "description": "With a similar flavor to black coffee, the americano consists of an espresso shot diluted in hot water.",
+    "description": "One of the non-essential amino acids commonly occuring in the L-form. It is found in animals and plants, especially in sugar cane and sugar beets. It may be a neurotransmitter.",
     "codon": [
       "GAU",
       "GAC"
@@ -60,7 +60,7 @@
     "id": 4
   },
   "cysteine": {
-    "description": "An espresso shot can be served solo or used as the foundation of most coffee drinks, like lattes and macchiatos.",
+    "description": "A non-essential, sulfur-containing amino acid. Cysteine is important for protein synthesis, detoxification, and diverse metabolic functions in humans.",
     "codon": [
       "UGU",
       "UGC"
@@ -71,7 +71,7 @@
     "id": 5
   },
   "glutamic acid": {
-    "description": "A double shot of espresso, the doppio is perfect for putting extra pep in your step.",
+    "description": "Used by almost all living beings in protein biosynthesis, it is non-essential in humans. It's ionic form, glutamate, is also the most abundant excitatory neurotransmitter in the vertebrate nervous system.",
     "codon": [
       "CAA",
       "CAG"
@@ -82,7 +82,7 @@
     "id": 6
   },
   "glutamine": {
-    "description": "Like yin and yang, a cortado is the perfect balance of espresso and warm steamed milk. The milk is used to cut back on the espresso’s acidity.",
+    "description": "A non-essential amino acid that is involved in regulation of toxic levels of ammonia in the body, and is also an important in the production of neurotransmitters in humans.",
     "codon": [
       "GAA",
       "GAG"
@@ -93,7 +93,7 @@
     "id": 7
   },
   "glycine": {
-    "description": "Named after those pesky midnight flights, a red eye can cure any tiresome morning. A full cup of hot coffee with an espresso shot mixed in, this will definitely get your heart racing.",
+    "description": "A non-essential, non-polar amino acid that is an inhibitory neurotransmitter in the central nervous sytsem. Glycine is also an important component and precursor for many macromolecules in cells.",
     "codon": [
       "GGU",
       "GGC",
@@ -106,7 +106,7 @@
     "id": 8
   },
   "histidine": {
-    "description": "Originating in Portugal, this hot coffee drink is closely related to the latte and cappuccino. Only difference is it contains about twice as much foamed milk, making it a lighter drink compared to the other two.",
+    "description": "A semi-essential amino acid needed in humans for growth and tissue repair. Histidine is also important in brain tissue health, immunity, gastric secretion, and sexual functions.",
     "codon": [
       "CAU",
       "CAC"
@@ -117,7 +117,7 @@
     "id": 9
   },
   "isoleucine": {
-    "description": "A lungo is a long-pull espresso. The longer the pull, the more caffeine there is and the more ounces you can enjoy.",
+    "description": "One of nine essential amino acids in humans, isoleucine is involved in wound healing, detoxification of nitrogenous wastes, immune function, and promoting hormone secretion. Often found in meats, fish, cheese, eggs, and most seeds and nuts.",
     "codon": [
       "AUU",
       "AUC",
@@ -129,7 +129,7 @@
     "id": 10
   },
   "leucine": {
-    "description": "The macchiato is another espresso-based drink that has a small amount of foam on top. It’s the happy medium between a cappuccino and a doppio.",
+    "description": "One of nine essential amino acids in humans, leucine is important for regulation of blood-sugar levels, growth and repair of muscle and bone tissue, growth hormone production, and wound healing. Leucine is found in many foods, making deficiency rare.",
     "codon": [
       "UUA",
       "UUG",
@@ -144,7 +144,7 @@
     "id": 11
   },
   "lysine": {
-    "description": "For all you chocolate lovers out there, you’ll fall in love with a mocha (or maybe you already have). The mocha is a chocolate espresso drink with steamed milk and foam.",
+    "description": "One of nine essential amino acids in humans, lysine is important in proteinogenesis, crosslinking of collagen polypeptides, uptake of essential mineral nutrients, and fatty acid metabolism. Sources of lysine include eggs, meat, soy, beans, cheese, and fish.",
     "codon": [
       "AAA",
       "AAG"
@@ -155,7 +155,7 @@
     "id": 12
   },
   "methionine": {
-    "description": "Ristretto is an espresso shot. It uses less hot water which creates a sweeter flavor compared to the bitter taste of a traditional shot of espresso or a doppio.",
+    "description": "One of nine essential amino acids in humans, methionine plays a critical role in the metabolism and angiogenesis in humans. It is also known as the 'start codon', as it indicates the start of the coding region during mRNA translation.",
     "codon": [
       "AUG"
     ],
@@ -165,7 +165,7 @@
     "id": 13
   },
   "phenylalanine": {
-    "description": "This Aussie-born drink is basically a cappuccino without the foam or chocolate sprinkle. It’s an espresso drink with steamed milk.",
+    "description": "One of nine essential amino acids in humans, phenylalanine is important in the biosynthesis of dopamine and norepinephrine neurotransmitters. Primarily found in milk of mammals.",
     "codon": [
       "UUU",
       "UUC"
@@ -176,7 +176,7 @@
     "id": 14
   },
   "proline": {
-    "description": "The affogato is an excuse to enjoy a scoop of ice cream any time of day (and any time of year in my opinion). Served with a scoop of ice cream and a shot of espresso, or two.",
+    "description": "A non-essential amino acid that is found in high concentrations in collagen, which is the main supportive protein of skin, tendons, bones, and connective tissue.",
     "codon": [
       "CCU",
       "CCC",
@@ -189,7 +189,7 @@
     "id": 15
   },
   "serine": {
-    "description": "Café au lait is perfect for the coffee minimalist who wants a bit more flavor. Just add a splash of warm milk to your coffee and you’re all set!",
+    "description": "A non-essential amino acid that is needed for metabolism of fats, fatty acids, and cell membranes, in addition to muscle growth and promoting a healthy immune system.",
     "codon": [
       "UCU",
       "UCC",
@@ -204,7 +204,7 @@
     "id": 16
   },
   "threonine": {
-    "description": "Irish coffee consists of black coffee, whiskey and sugar, topped with whipped cream.",
+    "description": "One of nine essential amino acids in humans, threonine is found in many proteins such as tooth enamel, collagen, and elastin. Threonine is also important to the nervous system and preventing fat buildup in the liver.",
     "codon": [
       "ACU",
       "ACC",
@@ -217,7 +217,7 @@
     "id": 17
   },
   "tryptophan": {
-    "description": "Traditional venezuelan coffee prepared by filtering the ground coffee in a cone of cloth and pouring hot water on top of it. It's prefferably drinked wihout milk nor cream.",
+    "description": "One of nine essential amino acids in humans, tryptophan is a precursor to serotonin, a neurotransmitter that is important to regulating appetite, sleep, mood, and pain. Often found in dairy products, meats, fish, and soybeans.",
     "codon": [
       "UGG"
     ],
@@ -227,7 +227,7 @@
     "id": 18
   },
   "tyrosine": {
-    "description": "Traditional cuban coffee method where a bit of freshly brewed coffee is mixed with sugar to create a highly sugared paste. Then add the rest of the coffee and stir adding milk until a 50/50 ratio is achieved.",
+    "description": "Tyrosine is involved in protein synthesis and serves as a precursor for the synthesis of catecholamines, thyroxine, and melanin.",
     "codon": [
       "UAU",
       "UAC"
@@ -238,7 +238,7 @@
     "id": 19
   },
   "valine": {
-    "description": "Bring panela and coffee to a boil in a small pan for 30 minutes until panela is melted. Brew your coffee using your favorite brewing technique but add the hot aguapanela instead of hot water. Delicious sweetened coffee is ready.",
+    "description": "One of nine essential amino acids in humans, valine is involved in muscle growth, tissue repair, and energy. Valine is obtained from soy, cheese, fish, meats and vegetables.",
     "codon": [
       "GUU",
       "GUC",
