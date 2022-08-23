@@ -1,16 +1,4 @@
 {
-  "Stop codon": {
-    "description": "A signal that halts protein synthesis in the cell.",
-    "codon": [
-      "UAA",
-      "UAG",
-      "UGA"
-    ],
-    "abbreviation3": "",
-    "abbreviation1": "",
-    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Nothing.jpg",
-    "id": 0
-  },
   "Alanine": {
     "description": "Alanine is a non-essential amino acid that is involved in sugar and acid metabolism, increasing immunity, and provides energy for muscles, brain tissue, and the central nervous system.",
     "codon": [
@@ -251,5 +239,17 @@
     "abbreviation1": "V",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/L-valine-2D-skeletal.png/539px-L-valine-2D-skeletal.png",
     "id": 20
+  },
+  "Stop codon": {
+    "description": "A signal that halts protein synthesis in the cell.",
+    "codon": [
+      "UAA",
+      "UAG",
+      "UGA"
+    ],
+    "abbreviation3": "",
+    "abbreviation1": "",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Nothing.jpg",
+    "id": 0
   }
 }
