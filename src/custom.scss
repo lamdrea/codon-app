@@ -10,6 +10,12 @@ $primary: #64C4CC;
 $secondary: #FFB3A1;
 $font-size-root: 16px;
 $grid-gutter-width: 1.75rem;
+$grid-breakpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 1100px,
+    xl: 1400px
+);
 
 
 //3. include remainder of required bootstrap stylesheets
@@ -56,13 +62,19 @@ h2 {
 
 h3 {
     font-family: Roboto Mono;
-    font-weight: 300;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: .75em;
 }
 
 .row-header {
     background-color: $primary;
     padding-top: $spacer * 3;
     padding-bottom: $spacer * 3;
+}
+
+.row-cards {
+    padding-top: $spacer * 3;
 }
 
 .title {
@@ -90,4 +102,17 @@ h3 {
     margin-left: $spacer *.25;
     margin-right: $spacer *.25;
     padding-right: 0; //necessary to center the input
+}
+
+.AACard {
+    background: $body-bg;
+    border-color: $body-color;
+    border-width: 3px;
+    border-radius: 0;
+    min-width: 350px;
+    max-width: 420px;
+    margin: .75em;
+    margin-bottom: 1em;
+    box-shadow: 6px 6px $secondary;
+    padding: .8em .5em .8em .5em;
 }
