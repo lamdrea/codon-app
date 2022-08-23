@@ -1,15 +1,17 @@
 {
-  "stop codon": {
+  "Stop codon": {
     "description": "A signal that halts protein synthesis in the cell.",
     "codon": [
       "UAA",
       "UAG",
       "UGA"
     ],
+    "abbreviation3": "",
+    "abbreviation1": "",
     "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Nothing.jpg",
     "id": 0
   },
-  "alanine": {
+  "Alanine": {
     "description": "Alanine is a non-essential amino acid that is involved in sugar and acid metabolism, increasing immunity, and provides energy for muscles, brain tissue, and the central nervous system.",
     "codon": [
       "GCU",
@@ -17,12 +19,12 @@
       "GCA",
       "GCG"
     ],
-    "abbreviation-3": "Ala",
-    "abbreviation-1": "A",
+    "abbreviation3": "Ala",
+    "abbreviation1": "A",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/L-Alanin_-_L-Alanine.svg/320px-L-Alanin_-_L-Alanine.svg.png",
     "id": 1
   },
-  "arginine": {
+  "Arginine": {
     "description": "Arginine is an essential amino acid that plays an important role in cell division, wound healing, removing ammonia from the body, immune function, and the release of hormones.",
     "codon": [
       "CGU",
@@ -32,67 +34,67 @@
       "AGA",
       "AGG"
     ],
-    "abbreviation-3": "Arg",
-    "abbreviation-1": "R",
+    "abbreviation3": "Arg",
+    "abbreviation1": "R",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Arginin_-_Arginine.svg/640px-Arginin_-_Arginine.svg.png",
     "id": 2
   },
-  "asparagine": {
+  "Asparagine": {
     "description": "Asparagine is a non-essential amino acid in humans and is involved in the metabolic control of cell functions in nerve and brain tissue.  ",
     "codon": [
       "AAU",
       "AAC"
     ],
-    "abbreviation-3": "Asn",
-    "abbreviation-1": "N",
+    "abbreviation3": "Asn",
+    "abbreviation1": "N",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/L-Asparagin_-_L-Asparagine.svg/640px-L-Asparagin_-_L-Asparagine.svg.png",
     "id": 3
   },
-  "aspartic acid": {
+  "Aspartic acid": {
     "description": "One of the non-essential amino acids commonly occuring in the L-form. It is found in animals and plants, especially in sugar cane and sugar beets. It may be a neurotransmitter.",
     "codon": [
       "GAU",
       "GAC"
     ],
-    "abbreviation-3": "Asp",
-    "abbreviation-1": "D",
+    "abbreviation3": "Asp",
+    "abbreviation1": "D",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg/640px-L-Asparagins%C3%A4ure_-_L-Aspartic_acid.svg.png",
     "id": 4
   },
-  "cysteine": {
+  "Cysteine": {
     "description": "A non-essential, sulfur-containing amino acid. Cysteine is important for protein synthesis, detoxification, and diverse metabolic functions in humans.",
     "codon": [
       "UGU",
       "UGC"
     ],
-    "abbreviation-3": "Cys",
-    "abbreviation-1": "C",
+    "abbreviation3": "Cys",
+    "abbreviation1": "C",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/L-Cystein_-_L-Cysteine.svg/640px-L-Cystein_-_L-Cysteine.svg.png",
     "id": 5
   },
-  "glutamic acid": {
+  "Glutamic acid": {
     "description": "Used by almost all living beings in protein biosynthesis, it is non-essential in humans. It's ionic form, glutamate, is also the most abundant excitatory neurotransmitter in the vertebrate nervous system.",
     "codon": [
       "CAA",
       "CAG"
     ],
-    "abbreviation-3": "Glu",
-    "abbreviation-1": "E",
+    "abbreviation3": "Glu",
+    "abbreviation1": "E",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg/640px-L-Glutamins%C3%A4ure_-_L-Glutamic_acid.svg.png",
     "id": 6
   },
-  "glutamine": {
+  "Glutamine": {
     "description": "A non-essential amino acid that is involved in regulation of toxic levels of ammonia in the body, and is also an important in the production of neurotransmitters in humans.",
     "codon": [
       "GAA",
       "GAG"
     ],
-    "abbreviation-3": "Gln",
-    "abbreviation-1": "Q",
+    "abbreviation3": "Gln",
+    "abbreviation1": "Q",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/L-Glutamin_-_L-Glutamine.svg/640px-L-Glutamin_-_L-Glutamine.svg.png",
     "id": 7
   },
-  "glycine": {
+  "Glycine": {
     "description": "A non-essential, non-polar amino acid that is an inhibitory neurotransmitter in the central nervous sytsem. Glycine is also an important component and precursor for many macromolecules in cells.",
     "codon": [
       "GGU",
@@ -100,35 +102,35 @@
       "GGA",
       "GGG"
     ],
-    "abbreviation-3": "Gly",
-    "abbreviation-1": "G",
+    "abbreviation3": "Gly",
+    "abbreviation1": "G",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Glycine-2D-skeletal.png/640px-Glycine-2D-skeletal.png",
     "id": 8
   },
-  "histidine": {
+  "Histidine": {
     "description": "A semi-essential amino acid needed in humans for growth and tissue repair. Histidine is also important in brain tissue health, immunity, gastric secretion, and sexual functions.",
     "codon": [
       "CAU",
       "CAC"
     ],
-    "abbreviation-3": "His",
-    "abbreviation-1": "H",
+    "abbreviation3": "His",
+    "abbreviation1": "H",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/L-Histidine_physiological.svg/640px-L-Histidine_physiological.svg.png",
     "id": 9
   },
-  "isoleucine": {
+  "Isoleucine": {
     "description": "One of nine essential amino acids in humans, isoleucine is involved in wound healing, detoxification of nitrogenous wastes, immune function, and promoting hormone secretion. Often found in meats, fish, cheese, eggs, and most seeds and nuts.",
     "codon": [
       "AUU",
       "AUC",
       "AUA"
     ],
-    "abbreviation-3": "Ile",
-    "abbreviation-1": "I",
+    "abbreviation3": "Ile",
+    "abbreviation1": "I",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/L-Isoleucin_-_L-Isoleucine.svg/640px-L-Isoleucin_-_L-Isoleucine.svg.png",
     "id": 10
   },
-  "leucine": {
+  "Leucine": {
     "description": "One of nine essential amino acids in humans, leucine is important for regulation of blood-sugar levels, growth and repair of muscle and bone tissue, growth hormone production, and wound healing. Leucine is found in many foods, making deficiency rare.",
     "codon": [
       "UUA",
@@ -138,44 +140,44 @@
       "CUA",
       "CUG"
     ],
-    "abbreviation-3": "Leu",
-    "abbreviation-1": "L",
+    "abbreviation3": "Leu",
+    "abbreviation1": "L",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/L-Leucine.svg/640px-L-Leucine.svg.png",
     "id": 11
   },
-  "lysine": {
+  "Lysine": {
     "description": "One of nine essential amino acids in humans, lysine is important in proteinogenesis, crosslinking of collagen polypeptides, uptake of essential mineral nutrients, and fatty acid metabolism. Sources of lysine include eggs, meat, soy, beans, cheese, and fish.",
     "codon": [
       "AAA",
       "AAG"
     ],
-    "abbreviation-3": "Lys",
-    "abbreviation-1": "K",
+    "abbreviation3": "Lys",
+    "abbreviation1": "K",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/L-Lysin_-_L-Lysine.svg/640px-L-Lysin_-_L-Lysine.svg.png",
     "id": 12
   },
-  "methionine": {
+  "Methionine": {
     "description": "One of nine essential amino acids in humans, methionine plays a critical role in the metabolism and angiogenesis in humans. It is also known as the 'start codon', as it indicates the start of the coding region during mRNA translation.",
     "codon": [
       "AUG"
     ],
-    "abbreviation-3": "Met",
-    "abbreviation-1": "M",
+    "abbreviation3": "Met",
+    "abbreviation1": "M",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Methionin_-_Methionine.svg/640px-Methionin_-_Methionine.svg.png",
     "id": 13
   },
-  "phenylalanine": {
+  "Phenylalanine": {
     "description": "One of nine essential amino acids in humans, phenylalanine is important in the biosynthesis of dopamine and norepinephrine neurotransmitters. Primarily found in milk of mammals.",
     "codon": [
       "UUU",
       "UUC"
     ],
-    "abbreviation-3": "Phe",
-    "abbreviation-1": "F",
+    "abbreviation3": "Phe",
+    "abbreviation1": "F",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/L-Phenylalanin_-_L-Phenylalanine.svg/640px-L-Phenylalanin_-_L-Phenylalanine.svg.png",
     "id": 14
   },
-  "proline": {
+  "Proline": {
     "description": "A non-essential amino acid that is found in high concentrations in collagen, which is the main supportive protein of skin, tendons, bones, and connective tissue.",
     "codon": [
       "CCU",
@@ -183,12 +185,12 @@
       "CCA",
       "CCG"
     ],
-    "abbreviation-3": "Pro",
-    "abbreviation-1": "P",
+    "abbreviation3": "Pro",
+    "abbreviation1": "P",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Prolin_-_Proline.svg/624px-Prolin_-_Proline.svg.png",
     "id": 15
   },
-  "serine": {
+  "Serine": {
     "description": "A non-essential amino acid that is needed for metabolism of fats, fatty acids, and cell membranes, in addition to muscle growth and promoting a healthy immune system.",
     "codon": [
       "UCU",
@@ -198,12 +200,12 @@
       "AGU",
       "AGG"
     ],
-    "abbreviation-3": "Ser",
-    "abbreviation-1": "S",
+    "abbreviation3": "Ser",
+    "abbreviation1": "S",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/L-Serin_-_L-Serine.svg/640px-L-Serin_-_L-Serine.svg.png",
     "id": 16
   },
-  "threonine": {
+  "Threonine": {
     "description": "One of nine essential amino acids in humans, threonine is found in many proteins such as tooth enamel, collagen, and elastin. Threonine is also important to the nervous system and preventing fat buildup in the liver.",
     "codon": [
       "ACU",
@@ -211,33 +213,33 @@
       "ACA",
       "ACG"
     ],
-    "abbreviation-3": "Thr",
-    "abbreviation-1": "T",
+    "abbreviation3": "Thr",
+    "abbreviation1": "T",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/L-Threonin_-_L-Threonine.svg/640px-L-Threonin_-_L-Threonine.svg.png",
     "id": 17
   },
-  "tryptophan": {
+  "Tryptophan": {
     "description": "One of nine essential amino acids in humans, tryptophan is a precursor to serotonin, a neurotransmitter that is important to regulating appetite, sleep, mood, and pain. Often found in dairy products, meats, fish, and soybeans.",
     "codon": [
       "UGG"
     ],
-    "abbreviation-3": "Trp",
-    "abbreviation-1": "W",
+    "abbreviation3": "Trp",
+    "abbreviation1": "W",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/L-Tryptophan_-_L-Tryptophan.svg/640px-L-Tryptophan_-_L-Tryptophan.svg.png",
     "id": 18
   },
-  "tyrosine": {
+  "Tyrosine": {
     "description": "Tyrosine is involved in protein synthesis and serves as a precursor for the synthesis of catecholamines, thyroxine, and melanin.",
     "codon": [
       "UAU",
       "UAC"
     ],
-    "abbreviation-3": "Tyr",
-    "abbreviation-1": "Y",
+    "abbreviation3": "Tyr",
+    "abbreviation1": "Y",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/L-Tyrosin_-_L-Tyrosine.svg/640px-L-Tyrosin_-_L-Tyrosine.svg.png",
     "id": 19
   },
-  "valine": {
+  "Valine": {
     "description": "One of nine essential amino acids in humans, valine is involved in muscle growth, tissue repair, and energy. Valine is obtained from soy, cheese, fish, meats and vegetables.",
     "codon": [
       "GUU",
@@ -245,8 +247,8 @@
       "GUA",
       "GUG"
     ],
-    "abbreviation-3": "Val",
-    "abbreviation-1": "V",
+    "abbreviation3": "Val",
+    "abbreviation1": "V",
     "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/L-valine-2D-skeletal.png/539px-L-valine-2D-skeletal.png",
     "id": 20
   }
