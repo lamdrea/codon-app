@@ -14,7 +14,7 @@ $grid-breakpoints: (
     sm: 576px,
     md: 768px,
     lg: 1100px,
-    xl: 1400px
+    xl: 1600px
 );
 
 
@@ -57,7 +57,7 @@ h1 {
 h2 {
     font-family: Roboto Mono;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 h3 {
@@ -65,6 +65,21 @@ h3 {
     font-weight: 700;
     font-size: 26px;
     line-height: .75em;
+}
+
+h5 {
+    font-family: Roboto Mono;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+h6 {
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+    color: #FEFDF8;
+    // overriding default header line-height for text centering
+    line-height: inherit;
 }
 
 .row-header {
@@ -78,7 +93,6 @@ h3 {
 }
 
 .title {
-
     text-align: center;
     margin: auto;
     padding-top: $spacer * 4;
@@ -115,4 +129,25 @@ h3 {
     margin-bottom: 1em;
     box-shadow: 6px 6px $secondary;
     padding: .8em .5em .8em .5em;
+}
+
+.circle-abbr-txt {
+    height: 32px;
+    width: 32px;
+    line-height: 32px;
+    border-radius: 100%;
+    text-align: center;
+    background: $body-color;
+}
+
+.rect-abbr-txt {
+    background: $body-color;
+    border-radius: 8px;
+    height: 32px;
+    width: auto;
+    line-height: 32px;
+    min-width: 32px;
+    margin-left: 4px;
+    padding-left: .5em;
+    padding-right: .5em;
 }
