@@ -31,12 +31,12 @@ const App = () => {
   }, [searchInput]);
 
   return (
-    //sets container as fluid up until screen size of 720px width
+    //sets container as fluid up until screen size of sm breakpoint
     <Container fluid>
       <Row className="row-header">
         <Col>
         </Col>
-        <Col sm='8' className="title">
+        <Col sm='10' lg ='8' className="title">
           <h1>Codon Translation</h1>
           <Row className="d-flex justify-content-space-between">
             <Col></Col>
@@ -58,9 +58,9 @@ const App = () => {
         </Col>
       </Row>
       <Row className="row-cards">
-        <Col md="2" lg="1" xl="2"></Col>
+        <Col md="2"></Col>
         <Col><ProteinList protein={protein} setProtein={setProtein} /></Col>
-        <Col md="2" lg="1" xl="2"></Col>
+        <Col md="2"></Col>
       </Row>
     </Container>
   );

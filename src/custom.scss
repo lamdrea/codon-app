@@ -13,8 +13,8 @@ $grid-gutter-width: 1.75rem;
 $grid-breakpoints: (
     sm: 576px,
     md: 768px,
-    lg: 1100px,
-    xl: 1600px
+    lg: 1120px,
+    xl: 1690px
 );
 
 
@@ -123,8 +123,10 @@ h6 {
     border-color: $body-color;
     border-width: 3px;
     border-radius: 0;
+    min-height: 200px;
+    width: 100%;
     min-width: 350px;
-    max-width: 420px;
+    max-width: 400px;
     margin: .75em;
     margin-bottom: 1em;
     box-shadow: 6px 6px $secondary;
@@ -150,4 +152,14 @@ h6 {
     margin-left: 4px;
     padding-left: .5em;
     padding-right: .5em;
+}
+
+.img-AA {
+    max-width: 180px;
+    max-height: 80px;
+}
+
+.card-footer{
+    background: $body-bg;
+    border: 0;
 }
