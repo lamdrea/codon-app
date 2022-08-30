@@ -159,7 +159,21 @@ h6 {
     max-height: 80px;
 }
 
-.card-footer{
+.card-footer {
     background: $body-bg;
     border: 0;
+}
+
+.help-icon {
+    font-size: 1.5em;
+
+    color: $body-color;
+    margin: 0 1em 0 0;
+    transition: all .5s;
+}
+
+.help-icon:hover {
+    color: white;
+    margin-top: 0.2em;
+    transition: all .5s;
 }

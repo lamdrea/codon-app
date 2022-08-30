@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import { CardGroup } from 'react-bootstrap';
 //import Button from 'react-bootstrap/Button';
+import { QuestionCircle } from 'react-bootstrap-icons';
 
 
 const App = () => {
@@ -54,7 +55,7 @@ const App = () => {
           </Row>
         </Col>
         <Col className="d-flex justify-content-end align-top">
-          ? help
+          <QuestionCircle className="help-icon"></QuestionCircle>
         </Col>
       </Row>
       <Row className="row-cards">
