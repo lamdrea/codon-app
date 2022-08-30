@@ -5,6 +5,7 @@ import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+// import { CardGroup } from 'react-bootstrap';
 //import Button from 'react-bootstrap/Button';
 
 
@@ -30,14 +31,14 @@ const App = () => {
   }, [searchInput]);
 
   return (
-    //sets container as fluid up until screen size of 720px width
+    //sets container as fluid up until screen size of sm breakpoint
     <Container fluid>
       <Row className="row-header">
         <Col>
         </Col>
-        <Col sm='8' className="title">
+        <Col sm='10' lg ='8' className="title">
           <h1>Codon Translation</h1>
-          <Row className="d.flex justify-content-space-between">
+          <Row className="d-flex justify-content-space-between">
             <Col></Col>
             <Col sm='10'>
               <h2>A lookup tool for the 20 amino acids encoded by the human genetic code.</h2>
@@ -56,8 +57,10 @@ const App = () => {
           ? help
         </Col>
       </Row>
-      <Row>
-        <ProteinList protein={protein} setProtein={setProtein} />
+      <Row className="row-cards">
+        <Col md="2"></Col>
+        <Col><ProteinList protein={protein} setProtein={setProtein} /></Col>
+        <Col md="2"></Col>
       </Row>
     </Container>
   );
