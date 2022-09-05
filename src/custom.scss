@@ -16,6 +16,10 @@ $grid-breakpoints: (
     lg: 1120px,
     xl: 1690px
 );
+$btn-close-color: $body-color;
+$btn-close-opacity: 1;
+$btn-close-hover-opacity: .5;
+$btn-close-width: 0.8em;
 
 
 //3. include remainder of required bootstrap stylesheets
@@ -34,19 +38,22 @@ $grid-breakpoints: (
 @import '../node_modules/bootstrap/scss/forms';
 @import '../node_modules/bootstrap/scss/card';
 @import '../node_modules/bootstrap/scss/utilities';
+@import '../node_modules/bootstrap/scss/close';
 
 //5. add your custom code here.
 //importing the font
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto+Mono:wght@300;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Roboto+Mono:wght@300;700&display=swap');
 
 
 :root {
     --bs-body-font-family: 'Inter', sans-serif;
+    --bs-body-font-weight: 400;
 }
 
 html {
-   overflow-y: scroll; 
+    overflow-y: scroll;
 }
+
 h1 {
     font-family: Inter;
     font-weight: bold;
@@ -175,5 +182,48 @@ h6 {
 .help-icon:hover {
     color: white;
     margin-top: 0.2em;
+    cursor: pointer;
     transition: all .5s;
+}
+
+.my-modal {
+    width: 990px;
+}
+
+.modal {
+    backdrop-filter: blur(5px);
+    overflow-y: hidden;
+}
+
+.modal-backdrop {
+    background-color: black;
+    opacity: .3 !important;
+}
+
+.modal-open {
+    padding-right: 0px !important;
+}
+
+
+.modal-content {
+    background-color: $body-bg;
+    border-radius: 0;
+    border-width: 3px;
+    border-color: $body-color;
+    padding: 1.5em;
+
+    .modal-header {
+        border-width: 0;
+        margin-bottom: 1em;
+    }
+
+    .modal-body {
+        padding-top: 0;
+        overflow-y: auto;
+        height: 400px; //adjust later
+    }
+}
+
+.btn-close:hover {
+    transition: all .25s;
 }
