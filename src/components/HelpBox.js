@@ -10,7 +10,7 @@ const HelpBox = ({ show, onHide }) => {
                     <Modal show={show} onHide={onHide} centered size="lg">
                         <Modal.Header closeButton>
                         </Modal.Header>
-                        <Modal.Body className="me-3 pe-3">
+                        <Modal.Body className="me-3 pe-3 thin-scrollbar">
                             <Accordion flush>
                                 <Accordion.Item eventKey="0">
                                     <Accordion.Header>
@@ -35,8 +35,8 @@ const HelpBox = ({ show, onHide }) => {
                                     <Accordion.Body>
                                         Amino acids are the building blocks of proteins, which are essential for
                                         all living things. Proteins are large, complex molecules that play many critical roles
-                                        in the body and are important for cell structure and function, as well as regulation tissues
-                                        and organs in the body.
+                                        in the body and are important for cell structure and function, as well as regulation of 
+                                        tissues and organs in the body.
                                         <br /><br />
                                         The body knows how to make proteins through instructions found in our genes.
                                         Genes direct the production of proteins through transcription, where
@@ -67,7 +67,7 @@ const HelpBox = ({ show, onHide }) => {
                                         What is a codon?
                                     </Accordion.Header>
                                     <Accordion.Body>
-                                        A sequence of three consecutive nucleotides in a DNA or RNA molecule that codes
+                                        A codon is a sequence of three consecutive nucleotides in a DNA or RNA molecule that codes
                                         for a specific amino acid. Certain codons signal the start or end of translation,
                                         called start or stop codons.
                                         <br /><br />

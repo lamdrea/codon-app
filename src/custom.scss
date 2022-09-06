@@ -8,6 +8,8 @@ $body-bg: #FEFDF8;
 $body-color: #18336D;
 $primary: #64C4CC;
 $secondary: #FFB3A1;
+$tertiary: #FCCD83;
+$darker-bg: #F7F5EA;
 $font-size-root: 16px;
 $grid-gutter-width: 1.75rem;
 $grid-breakpoints: (
@@ -190,10 +192,6 @@ h6 {
     transition: all .5s;
 }
 
-.my-modal {
-    width: 990px;
-}
-
 .modal {
     backdrop-filter: blur(5px);
     overflow-y: hidden;
@@ -223,13 +221,35 @@ h6 {
 
     .modal-body {
         padding-top: 0;
+        margin-bottom: 1em;
         overflow-y: auto;
         height: 400px; //adjust later
     }
+    
+    .btn-close:hover {
+        transition: all .25s;
+    }
 }
 
-.btn-close:hover {
-    transition: all .25s;
+//For Firefox only - web docs experimental
+.thin-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: $body-color $darker-bg;
+
+    // Works in Chrome, Safari, IE
+    &::-webkit-scrollbar {
+        width: 5px ;
+    }
+    
+    &::-webkit-scrollbar-track {
+        background: $darker-bg;
+        border-radius: 5px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+        background: $body-color;
+        border-radius: 5px;
+    }
 }
 
 .accordion-item {
@@ -237,18 +257,23 @@ h6 {
     margin-right: auto;
     background: $body-bg;
     border-width: 0;
-    
+
     .accordion-button {
         font-weight: 600;
         font-family: Inter;
-    }
-
-    .accordion-button:not(.collapsed) {
-        background-color: #FCCD83;
-        opacity: 1;
         color: $body-color;
     }
 
+    .accordion-button:hover {
+        background: $darker-bg;
+    }
+
+    .accordion-button:not(.collapsed) {
+        background-color: $tertiary;
+        opacity: 1;
+    }
+
+    // Moves the chevron to the left side
     .accordion-button:after {
         order: -1;
         margin-left: 0;
