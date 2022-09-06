@@ -6,10 +6,17 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 // import { CardGroup } from 'react-bootstrap';
-//import Button from 'react-bootstrap/Button';
+// import Button from 'react-bootstrap/Button';
+import { QuestionCircle } from 'react-bootstrap-icons';
+import HelpBox from './components/HelpBox';
 
 
 const App = () => {
+
+  // State of the help box
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   //Loads fake protein API upon website load
   //const API_PROTEINS = require('./backend/PROTEINS_API.json');
@@ -33,10 +40,11 @@ const App = () => {
   return (
     //sets container as fluid up until screen size of sm breakpoint
     <Container fluid>
+      <HelpBox show={show} onHide={handleClose} />
       <Row className="row-header">
         <Col>
         </Col>
-        <Col sm='10' lg ='8' className="title">
+        <Col sm='10' lg='8' className="title">
           <h1>Codon Translation</h1>
           <Row className="d-flex justify-content-space-between">
             <Col></Col>
@@ -48,13 +56,13 @@ const App = () => {
           </Row>
           <Row className="px-4 d-flex justify-content-center">
             <Col>
-              <center>Search by codon. Enter A, U, C or G:</center>
+              {/* <center>Search by codon. Enter A, U, C or G:</center> */}
               <CodonSearchBox searchInput={searchInput} setSearchInput={setSearchInput} />
             </Col>
           </Row>
         </Col>
         <Col className="d-flex justify-content-end align-top">
-          ? help
+          <QuestionCircle className="help-icon" onClick={() => handleShow()}></QuestionCircle>
         </Col>
       </Row>
       <Row className="row-cards">
