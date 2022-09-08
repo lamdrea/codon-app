@@ -120,15 +120,26 @@ h6 {
     font-size: 48px;
     font-weight: 700;
     color: $body-color;
+    background-color: $body-bg;
     border: 0px;
     height: 1.85em;
     width: 1.3em;
     letter-spacing: .1em;
     text-align: center;
-    margin-top: $spacer * .5;
     margin-left: $spacer *.25;
     margin-right: $spacer *.25;
-    padding-right: 0; //necessary to center the input
+    padding-left: 4px;
+    padding-right: 0;
+    caret-color: $secondary;
+    border-radius: 2px;
+
+    &:focus {
+        outline: none;
+    }
+
+    &::selection {
+        background: $tertiary;
+    }
 }
 
 .AACard {
