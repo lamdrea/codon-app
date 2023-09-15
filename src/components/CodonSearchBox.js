@@ -1,56 +1,89 @@
-const CodonSearchBox = (props) => {
+/**
+ * Parses keyCode for valid key code values [A, U, C, G] and uppercases them.
+ * All other values are ignored (for now...) and returns an empty string.
+ * @param {int} keyCode The keyCode associated with the event input
+ * @returns {string}    The parsed keyCode
+ * @todo Handle tab, left arrow, up arrow, right arrow, and down arrow inputs
+ */
+const parseKeyCode = (keyCode) => {
+    const validKeyCodes = {
+        65: 'A',
+        67: 'C',
+        71: 'G',
+        85: 'U'
+    }
 
+    if (Object.hasOwn(validKeyCodes, keyCode)) {
+        return validKeyCodes[keyCode].toUpperCase();
+    } else {
+        return '';
+    }
+}
+
+/**
+ * Upon hitting backspace, if current box value is empty, delete previous box value and move 
+ * the selector to that box. Otherwise, deletes the current value on the box that selector is currently on.
+ * @param {obj} e 
+ * @param {obj} props 
+ */
+const handleBackspace = (e, props) => {
+    /**
+     * Upon hitting backspace, if the current box value is empty, delete the previous box value 
+     * and move the selector to that box.
+     * Otherwise, deletes current value on whichever box the selector is currently on.
+     */
+
+     const target = e.target.id;
+     const index = parseInt(target);
+     const form = e.target.form.elements; //HTML selector for the different elements inside <form>
+
+     if (e.target.value === '') {
+        form[index - 1].focus();
+        props.setSearchInput({
+            ...props.searchInput,
+            [index - 1]: ''
+        });
+    } else {
+        props.setSearchInput({
+            ...props.searchInput,
+            [index]: ''
+        })
+    }
+}
+
+const updateDisplay = (e, props, validInput) => {
+    /**
+     * Upon valid input [A, U, C, G], update the current box with that value and move the selector forward.
+     */
+
+     const target = e.target.id;
+     const index = parseInt(target);
+     const form = e.target.form.elements; //HTML selector for the different elements inside <form>
+
+     props.setSearchInput({
+        ...props.searchInput,
+        [target]: validInput
+    });
+    form[index + 1].focus();
+}
+
+const CodonSearchBox = (props) => {
     const handleChange = e => {
         // Only accepts A, U, C or G and converts to upper case
-        const target = e.target.id;
-        const index = parseInt(target); //changes the string ID into an integer
-        const form = e.target.form.elements; //HTML selector for the different elements inside <form>
-        const keyCodeListObj = {
-            65: 'A',
-            67: 'C',
-            71: 'G',
-            85: 'U'
-            // 8: 'Backspace',
-            // 9: 'Tab',
-            // 37: 'Left arrow',
-            // 38: 'Up arrow',
-            // 39: 'Right arrow',
-            // 40: 'Down arrow'
-        }
+        // const target = e.target.id;
+        // const index = parseInt(target); //changes the string ID into an integer
+        // const form = e.target.form.elements; //HTML selector for the different elements inside <form>
 
-        //if e.keyCode is any of A U C G, change it to uppercase and set variable
-        //for ANYTHING ELSE (for now), set variable to empty string
-        let adjustedInput = '';
-        if (Object.hasOwn(keyCodeListObj, e.keyCode)) {
-            adjustedInput = keyCodeListObj[e.keyCode].toUpperCase();
-        } else {
-            adjustedInput = '';
-        }
+        let adjustedInput = parseKeyCode(e.keyCode);
 
         // If current value is empty, delete previous box value and move selector to previous box
         // Otherwise, delete the current value and remain on current box
         if (e.key === 'Backspace') {
-            if (e.target.value === '') {
-                form[index - 1].focus();
-                props.setSearchInput({
-                    ...props.searchInput,
-                    [index-1]: ''
-                });
-            } else {
-                props.setSearchInput({
-                    ...props.searchInput,
-                    [index]: ''
-                })
-            }
-
-
+            handleBackspace(e, props);
+        
         // For AUCG, update box value and move selector forward
         } else if (adjustedInput !== '') {
-            props.setSearchInput({
-                ...props.searchInput,
-                [target]: adjustedInput
-            });
-            form[index + 1].focus();
+            updateDisplay(e, props, adjustedInput);
         }
         e.preventDefault();
     }
