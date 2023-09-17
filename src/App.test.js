@@ -3,7 +3,7 @@ import { render, screen, fireEvent } from "@testing-library/react";
 import '@testing-library/jest-dom';
 import '@testing-library/user-event'
 import App from './App';
-import userEvent from '@testing-library/user-event';
+
 
 describe ('App', () => {
     test('if the heading is correct', () => {
@@ -82,11 +82,46 @@ describe ('App', () => {
         var cardElements = screen.queryAllByTestId("card");
         expect(cardElements.length).toBe(21);
     })
-    
+})
 
-    //test the help module
+describe('Help module', () => {
+    test('if help module is hidden upon load', () => {
+        const helpModule = screen.queryByTitle("help-module");
+        expect(helpModule).toBeFalsy;
+    })
 
+    test('if help module is opened upon clicking icon', () => {
+        render(<App />);
+        const helpIcon = screen.getByTitle("help-icon");
+        fireEvent.click(helpIcon);
+        const helpModule = screen.getByTitle("help-module");
 
+        expect(helpModule).toBeTruthy;
+    })
 
+    test('if help module can be closed via the button', () => {
+        render(<App />);
+        const helpIcon = screen.getByTitle("help-icon");
+        fireEvent.click(helpIcon);
+
+        var helpModule = screen.getByTitle("help-module");
+        expect(helpModule).toBeTruthy;
+
+        const closeButton = screen.getByRole("button", { name: "Close" });
+        fireEvent.click(closeButton);
+        helpModule = screen.queryByTitle("help-module");
+        expect(helpModule).toBeFalsy;
+    })
+
+    test('if help module can be closed by clicking outside the module', () => {
+        render(<App />);
+        const helpIcon = screen.getByTitle("help-icon");
+        fireEvent.click(helpIcon);
+        var helpModule = screen.queryByTitle("help-module");
+        expect(helpModule).toBeTruthy;
+
+        fireEvent.click(document.body);
+        expect(helpModule).toBeFalsy;
+    })
 })
 

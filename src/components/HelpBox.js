@@ -7,7 +7,7 @@ const HelpBox = ({ show, onHide }) => {
         <>
             {
                 show ?
-                    <Modal show={show} onHide={onHide} centered size="lg">
+                    <Modal show={show} onHide={onHide} centered size="lg" title="help-module">
                         <Modal.Header closeButton>
                         </Modal.Header>
                         <Modal.Body className="me-3 pe-3 thin-scrollbar">

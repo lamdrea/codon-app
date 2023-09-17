@@ -62,7 +62,7 @@ const App = () => {
           </Row>
         </Col>
         <Col className="d-flex justify-content-end align-top">
-          <QuestionCircle className="help-icon" onClick={() => handleShow()}></QuestionCircle>
+          <QuestionCircle className="help-icon" title="help-icon" onClick={() => handleShow()}></QuestionCircle>
         </Col>
       </Row>
       <Row className="row-cards">

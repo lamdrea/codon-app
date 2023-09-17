@@ -1,7 +1,7 @@
 const NUCLEOTIDES = ["A", "C", "G", "U"];
 
 /**
- * Upon receiving a Nucleotide letter, change the state. Also move the selector to the following box.
+ * Upon receiving a nucleotide letter, change the state. Also move the selector to the following box.
  * @param {obj} e 
  * @param {obj} props 
  */
