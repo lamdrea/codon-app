@@ -12,8 +12,8 @@ const ProteinList = (props) => {
             <Row className="d-flex justify-content-evenly">
                 {Object.keys(proteinObj).map((protein) =>
                     // small - 1 col... large - 2 col ... xl - 3 col
-                    <Col sm="12" lg="6" xl="4" className="d-flex justify-content-center">
-                        <Card className="AACard">
+                    <Col sm="12" lg="6" xl="4" className="d-flex justify-content-center" key={'Row ' + protein}>
+                        <Card className="AACard" data-testid="card">
                             <Card.Body>
                                 <Row>
                                     <Col>

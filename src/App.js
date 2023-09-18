@@ -22,7 +22,7 @@ const App = () => {
   //const API_PROTEINS = require('./backend/PROTEINS_API.json');
 
   //Keep track of search value and protein in a state
-  const [searchInput, setSearchInput] = useState('');
+  const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
   const [protein, setProtein] = useState(_fetch_proteins()) //initalizes with an object of all proteins
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const App = () => {
           </Row>
         </Col>
         <Col className="d-flex justify-content-end align-top">
-          <QuestionCircle className="help-icon" onClick={() => handleShow()}></QuestionCircle>
+          <QuestionCircle className="help-icon" title="help-icon" onClick={() => handleShow()}></QuestionCircle>
         </Col>
       </Row>
       <Row className="row-cards">
