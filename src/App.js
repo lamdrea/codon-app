@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import ProteinList from './components/ProteinList';
+import AminoAcidList from './components/AminoAcidList';
 import CodonSearchBox from './components/CodonSearchBox';
-import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
+import { _fetch_aminoacids, _fetch_aminoacid_by_codon } from './backend/backend.js'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -18,21 +18,21 @@ const App = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  //Loads fake protein API upon website load
-  //const API_PROTEINS = require('./backend/PROTEINS_API.json');
+  //Loads fake aminoacid API upon website load
+  //const API_AMINOACIDS = require('./backend/AMINOACIDS_API.json');
 
-  //Keep track of search value and protein in a state
+  //Keep track of search value and aminoacid in a state
   const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
-  const [protein, setProtein] = useState(_fetch_proteins()) //initalizes with an object of all proteins
+  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) //initalizes with an object of all aminoacids
 
   useEffect(() => {
     // Everytime there's an event.. run this
-    // When searchInput length = 3 and there are no empty strings, fetch the matching protein
-    // Otherwise, reset to show all proteins
+    // When searchInput length = 3 and there are no empty strings, fetch the matching aminoacid
+    // Otherwise, reset to show all aminoacids
     if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
-      setProtein(_fetch_protein_by_codon(Object.values(searchInput).join('')));
+      setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
     } else {
-      setProtein(_fetch_proteins());
+      setAminoAcid(_fetch_aminoacids());
     }
 
   }, [searchInput]);
@@ -67,7 +67,7 @@ const App = () => {
       </Row>
       <Row className="row-cards">
         <Col md="2"></Col>
-        <Col><ProteinList protein={protein} setProtein={setProtein} /></Col>
+        <Col><AminoAcidList aminoacid={aminoacid} setAminoAcid={setAminoAcid} /></Col>
         <Col md="2"></Col>
       </Row>
     </Container>
