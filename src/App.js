@@ -5,30 +5,28 @@ import { _fetch_aminoacids, _fetch_aminoacid_by_codon } from './backend/backend.
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import { CardGroup } from 'react-bootstrap';
-// import Button from 'react-bootstrap/Button';
 import { QuestionCircle } from 'react-bootstrap-icons';
 import HelpBox from './components/HelpBox';
 
-
 const App = () => {
-
-  // State of the help box
+  //Help  state
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  //Loads fake aminoacid API upon website load
+  //If I had an API, I would call it here:
   //const API_AMINOACIDS = require('./backend/AMINOACIDS_API.json');
 
-  //Keep track of search value and aminoacid in a state
+  //Keep track of search input and amino acid display in a state
+  //Initalize with an object of all amino acids
   const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
-  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) //initalizes with an object of all aminoacids
+  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) 
 
   useEffect(() => {
-    // Everytime there's an event.. run this
-    // When searchInput length = 3 and there are no empty strings, fetch the matching aminoacid
-    // Otherwise, reset to show all aminoacids
+    /**
+     * When searchInput length is 3, fetch the matching amino acid. Otherwise, reset the list
+     *  to include all amino acids.
+     */
     if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
       setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
     } else {
@@ -38,7 +36,6 @@ const App = () => {
   }, [searchInput]);
 
   return (
-    //sets container as fluid up until screen size of sm breakpoint
     <Container fluid>
       <HelpBox show={show} onHide={handleClose} />
       <Row className="row-header">
