@@ -1,44 +1,41 @@
 import React, { useEffect, useState } from 'react';
-import ProteinList from './components/ProteinList';
+import AminoAcidList from './components/AminoAcidList';
 import CodonSearchBox from './components/CodonSearchBox';
-import { _fetch_proteins, _fetch_protein_by_codon } from './backend/backend.js'
+import { _fetch_aminoacids, _fetch_aminoacid_by_codon } from './backend/backend.js'
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-// import { CardGroup } from 'react-bootstrap';
-// import Button from 'react-bootstrap/Button';
 import { QuestionCircle } from 'react-bootstrap-icons';
 import HelpBox from './components/HelpBox';
 
-
 const App = () => {
-
-  // State of the help box
+  //Help  state
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  //Loads fake protein API upon website load
-  //const API_PROTEINS = require('./backend/PROTEINS_API.json');
+  //If I had an API, I would call it here:
+  //const API_AMINOACIDS = require('./backend/AMINOACIDS_API.json');
 
-  //Keep track of search value and protein in a state
+  //Keep track of search input and amino acid display in a state
+  //Initalize with an object of all amino acids
   const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
-  const [protein, setProtein] = useState(_fetch_proteins()) //initalizes with an object of all proteins
+  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) 
 
   useEffect(() => {
-    // Everytime there's an event.. run this
-    // When searchInput length = 3 and there are no empty strings, fetch the matching protein
-    // Otherwise, reset to show all proteins
+    /**
+     * When searchInput length is 3, fetch the matching amino acid. Otherwise, reset the list
+     *  to include all amino acids.
+     */
     if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
-      setProtein(_fetch_protein_by_codon(Object.values(searchInput).join('')));
+      setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
     } else {
-      setProtein(_fetch_proteins());
+      setAminoAcid(_fetch_aminoacids());
     }
 
   }, [searchInput]);
 
   return (
-    //sets container as fluid up until screen size of sm breakpoint
     <Container fluid>
       <HelpBox show={show} onHide={handleClose} />
       <Row className="row-header">
@@ -67,7 +64,7 @@ const App = () => {
       </Row>
       <Row className="row-cards">
         <Col md="2"></Col>
-        <Col><ProteinList protein={protein} setProtein={setProtein} /></Col>
+        <Col><AminoAcidList aminoacid={aminoacid} setAminoAcid={setAminoAcid} /></Col>
         <Col md="2"></Col>
       </Row>
     </Container>

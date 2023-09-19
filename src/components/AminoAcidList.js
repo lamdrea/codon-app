@@ -3,22 +3,27 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
 
-//Upon first load, app displays all proteins (subject to change)
-//This list will dynamically update after the user enters 3 letters in to the search bar
-const ProteinList = (props) => {
-    const proteinObj = props.protein;
+/**
+ * Component that displays all amino acid cards until user enters 3 letters into the search bar, which then shows 
+ *  the 1 matching amino acid card.
+ * @param {*} props     Includes state of search box input
+ * @returns             Cards w/ amino acid information
+ */
+const AminoAcidList = (props) => {
+    const aminoacidObj = props.aminoacid;
     return (
         <>
             <Row className="d-flex justify-content-evenly">
-                {Object.keys(proteinObj).map((protein) =>
-                    // small - 1 col... large - 2 col ... xl - 3 col
-                    <Col sm="12" lg="6" xl="4" className="d-flex justify-content-center" key={'Row ' + protein}>
+                {Object.keys(aminoacidObj).map((aminoacid) =>
+                    <Col sm="12" lg="6" xl="4" className="d-flex justify-content-center" key={'Row ' + aminoacid}>
                         <Card className="AACard" data-testid="card">
                             <Card.Body>
                                 <Row>
                                     <Col>
-                                        <h3 key={proteinObj[protein].id}>{protein}</h3>
-                                        <h5>{proteinObj[protein].codon.join(" ")}</h5>
+                                        {/* Name of AA */}
+                                        <h3 key={aminoacidObj[aminoacid].id}>{aminoacid}</h3>
+                                        {/* Codon List */}
+                                        <h5>{aminoacidObj[aminoacid].codon.join(" ")}</h5>
                                     </Col>
                                 </Row>
                             </Card.Body>
@@ -26,14 +31,14 @@ const ProteinList = (props) => {
                                 <Row>
                                     <Col className="d-flex justify-content-start align-items-end">
                                         <div className="circle-abbr-txt">
-                                            <h6>{proteinObj[protein].abbreviation1}</h6>
+                                            <h6>{aminoacidObj[aminoacid].abbreviation1}</h6>
                                         </div>
                                         <div className="rect-abbr-txt">
-                                            <h6>{proteinObj[protein].abbreviation3}</h6>
+                                            <h6>{aminoacidObj[aminoacid].abbreviation3}</h6>
                                         </div>
                                     </Col>
                                     <Col className="d-flex justify-content-end align-items-end">
-                                        <img src={proteinObj[protein].image} alt="Chemical structure of amino acid" className="img-AA"></img>
+                                        <img src={aminoacidObj[aminoacid].image} alt="Chemical structure of amino acid" className="img-AA"></img>
                                     </Col>
                                 </Row>
                             </Card.Footer>
@@ -45,4 +50,4 @@ const ProteinList = (props) => {
     )
 }
 
-export default ProteinList;
+export default AminoAcidList;

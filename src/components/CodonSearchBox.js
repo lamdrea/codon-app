@@ -1,13 +1,14 @@
 const NUCLEOTIDES = ["A", "C", "G", "U"];
 
 /**
- * Upon receiving a nucleotide letter, change the state. Also move the selector to the following box.
- * @param {obj} e 
- * @param {obj} props 
+ * Handles receiving a valid nucleotide letter and moves the selector.
+ * @param {obj} e       user input event
+ * @param {obj} props   includes state of current search box
+ * @returns             updated searchInput and new selector position
  */
 const handleNucleotideInput = (e, props) => {
     const index = parseInt(e.target.id);
-    const form = e.target.form.elements; //HTML selector for the different elements inside <form>
+    const form = e.target.form.elements; 
 
     props.setSearchInput({
         ...props.searchInput,
@@ -18,16 +19,18 @@ const handleNucleotideInput = (e, props) => {
         form[index + 1].focus();
     }
 }
+
 /**
- * Upon hitting backspace, if current box value is empty, delete previous box value and move 
- * the selector to that box. Otherwise, deletes the current value on the box that selector is currently on.
- * @param {obj} e 
- * @param {obj} props 
+ * Handles backspace input and moves the selector.
+ * @param {obj} e       user input event
+ * @param {obj} props   current searchInput state
+ * @returns             updated searchInput and new selector position
  */
 const handleBackspace = (e, props) => {
     const index = parseInt(e.target.id);
-    const form = e.target.form.elements; //HTML selector for the different elements inside <form>
+    const form = e.target.form.elements; 
 
+    //If current box is empty, move and delete the previous box
     if (e.target.value === '' && index !== 0) {
         form[index - 1].focus();
         props.setSearchInput({
@@ -42,13 +45,17 @@ const handleBackspace = (e, props) => {
     }
 }
 
-
+/**
+ * Component that allows user to search codon combinations.
+ * @param {*} props     Inherits searchInput state
+ * @returns             Updated searchInput and input forms.
+ */
 const CodonSearchBox = (props) => {
-    
+    /**
+     * Handles valid inputs from the user.
+     * @param {*} e     User input event
+     */
     const handleChange = e => {
-        // If current value is empty, delete previous box value and move selector to previous box
-        // Otherwise, delete the current value and remain on current box
-
         if (NUCLEOTIDES.includes(e.key.toUpperCase())) {
             handleNucleotideInput(e, props);
         }
