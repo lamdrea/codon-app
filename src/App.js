@@ -19,19 +19,27 @@ const App = () => {
 
   //Keep track of search input and amino acid display in a state
   //Initalize with an object of all amino acids
-  const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
-  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) 
+  const [searchInput, setSearchInput] = useState({ 0: '', 1: '', 2: '' });
+  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids())
 
   useEffect(() => {
     /**
      * When searchInput length is 3, fetch the matching amino acid. Otherwise, reset the list
      *  to include all amino acids.
      */
-    if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
-      setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
+    // if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
+    //   setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
+    // } else {
+    //   setAminoAcid(_fetch_aminoacids());
+    // }
+
+    //Trigger whenever there is any valid input in the boxes
+    if (Object.values(searchInput).some(Boolean)) {
+      setAminoAcid(_fetch_aminoacid_by_codon(searchInput));
     } else {
       setAminoAcid(_fetch_aminoacids());
     }
+
 
   }, [searchInput]);
 
