@@ -52,21 +52,36 @@ describe ('App', () => {
         expect(threonineCard).toBeInTheDocument;
     })
 
-    test('if an incomplete search displays all cards', () => {
+    test('if an incomplete search displays matching cards', () => {
         render(<App />);
         const inputElements = screen.getAllByRole("textbox");
-        fireEvent.keyDown(inputElements[0], {key: "G"});
-        fireEvent.keyDown(inputElements[1], {key: "G"});
+        fireEvent.keyDown(inputElements[0], {key: "C"});
+        fireEvent.keyDown(inputElements[1], {key: "A"});
         fireEvent.keyDown(inputElements[2], {key: "G"});
         
+        const glutamicAcidCard = screen.getByText('Glutamic acid');
         var cardElements = screen.queryAllByTestId("card");
+        expect(glutamicAcidCard).toBeInTheDocument;
         expect(cardElements.length).toBe(1);
-
+        
         fireEvent.keyDown(inputElements[2], {key: "Backspace"});
-        expect(inputElements[2].value).toBe("");
-
         cardElements = screen.queryAllByTestId("card");
-        expect(cardElements.length).toBe(21);
+        const histidineCard = screen.getByText('Histidine');
+        expect(glutamicAcidCard).toBeInTheDocument;
+        expect(histidineCard).toBeInTheDocument;
+        expect(cardElements.length).toBe(2);
+
+        fireEvent.keyDown(inputElements[1], {key: "Backspace"});
+        cardElements = screen.queryAllByTestId("card");
+        const prolineCard = screen.getByText('Proline');
+        const arginineCard = screen.getByText('Arginine');
+        const leucineCard = screen.getByText('Leucine');
+        expect(glutamicAcidCard).toBeInTheDocument;
+        expect(histidineCard).toBeInTheDocument;
+        expect(prolineCard).toBeInTheDocument;
+        expect(arginineCard).toBeInTheDocument;
+        expect(leucineCard).toBeInTheDocument;
+        expect(cardElements.length).toBe(5);
     })
 
     test('if inputting non-valid nucleotide letters does not change display', () => {

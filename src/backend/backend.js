@@ -67,13 +67,13 @@ function _fetch_aminoacids() {
  */
 function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
     var tempAAList = new Set([]); 
-    var aminoacidObj = {}; 
+    var aminoacidObj = {};
 
-    for (let i = 0; i < CODON2AA.length; i++) {
-        if ((codonFirst === CODON2AA[i][0][0] || codonFirst === "") &&
-            (codonSecond === CODON2AA[i][0][1] || codonSecond === "") &&
-            (codonThird === CODON2AA[i][0][2] || codonThird === "")) { 
-            tempAAList.add(CODON2AA[i][1]);
+    for (let [codon, aminoAcid] of CODON2AA) {
+        if ((codonFirst === codon[0] || codonFirst === "") &&
+            (codonSecond === codon[1] || codonSecond === "") &&
+            (codonThird === codon[2] || codonThird === "")) { 
+            tempAAList.add(aminoAcid);
         }
     }
 
