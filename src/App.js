@@ -23,19 +23,9 @@ const App = () => {
   const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids())
 
   useEffect(() => {
-    /**
-     * When searchInput length is 3, fetch the matching amino acid. Otherwise, reset the list
-     *  to include all amino acids.
-     */
-    // if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
-    //   setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
-    // } else {
-    //   setAminoAcid(_fetch_aminoacids());
-    // }
-
     //Trigger whenever there is any valid input in the boxes
     if (Object.values(searchInput).some(Boolean)) {
-      setAminoAcid(_fetch_aminoacid_by_codon(searchInput));
+      setAminoAcid(_fetch_aminoacid_by_codon(searchInput[0], searchInput[1], searchInput[2]));
     } else {
       setAminoAcid(_fetch_aminoacids());
     }

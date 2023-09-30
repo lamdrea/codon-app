@@ -58,68 +58,29 @@ function _fetch_aminoacids() {
 }
 
 /**
- * Fetch an amino acid based on codon through the lookup table. Then, search in the master table
+ * Dynamically fetch an amino acid based on codon through the lookup table. Then, search in the master table
  *  for the amino acid key and return the corresponding object.
- * @param {Obj} codon   the search input, represented by 3 keys
- * @returns             the matching amino acid object
+ * @param {str} codonFirst    the first letter of the codon
+ * @param {str} codonSecond   the second letter of the codon
+ * @param {str} codonThird    the third letter of the codon
+ * @returns                 the matching amino acid object
  */
-function _fetch_aminoacid_by_codon(codon) {
-    // var matchedAminoAcidName = '';
-    var aminoacidObj = {}; //our final list
-    var tempCodonList = {}; //running list
-    
-    //Check each key from the search input
-    for (let i = 0; i < 3; i++) {
-        //check if running list has entries
-        //if it does, it means we are PAST the first non empty key, and you continue searching
-        // in the running list, not the lookup table
-        if (Object.keys(tempCodonList).length === 0 && codon[i] !== '') {
-            //Search for match in lookup table.... 
-            //if this letter matches, add the matching codon to a running list
+function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
+    var tempAAList = new Set([]); 
+    var aminoacidObj = {}; 
 
-            for (let j = 0; j < CODON2AA.length; j++) {
-                if (codon[i] === CODON2AA[j][0][i]) {
-                    tempCodonList[CODON2AA[j][0]] = CODON2AA[j][1]; //add codon and AA pair to list
-                }
-            }
+    for (let i = 0; i < CODON2AA.length; i++) {
+        if ((codonFirst === CODON2AA[i][0][0] || codonFirst === "") &&
+            (codonSecond === CODON2AA[i][0][1] || codonSecond === "") &&
+            (codonThird === CODON2AA[i][0][2] || codonThird === "")) { 
+            tempAAList.add(CODON2AA[i][1]);
         }
-        else if (Object.keys(tempCodonList).length > 0 && codon[i] !== '') {
-            var keysToDelete = [];
-            for (let j = 0; j < Object.keys(tempCodonList).length; j++) {
-                //remove from the list if it's not a match
-                if (codon[i] !== Object.keys(tempCodonList)[j][i]) {  // probably doesn't refer to what i want it to here
-                    keysToDelete.push(Object.keys(tempCodonList)[j]);
-                }
-            }
-
-            for (let key of keysToDelete) {
-                delete tempCodonList[key]
-            }
-        }
-        console.log(tempCodonList);
     }
 
-    for (let aminoAcid of new Set(Object.values(tempCodonList))) {
+    for (let aminoAcid of tempAAList) {
         aminoacidObj[aminoAcid] = AA_TABLE[aminoAcid];
     }
 
-    //From the running list, return the matching amino acids
-    // for (let i = 0; i < Object.keys(tempCodonList).length; i++) {
-    //     matchedAminoAcidName = Object.values(tempCodonList)[i];
-        
-    //     //add to the final list if it's not already tehre
-    //     if (!aminoacidObj.hasOwnProperty(matchedAminoAcidName)) {
-    //         aminoacidObj[matchedAminoAcidName] = AA_TABLE[matchedAminoAcidName];
-    //     }
-    // }
-
-    // for (let i = 0; i < CODON2AA.length; i++) {
-    //     if (CODON2AA[i][0] === codon) {
-    //         matchedAminoAcidName = CODON2AA[i][1];
-    //         break;
-    //     }
-    // }
-    // aminoacidObj[matchedAminoAcidName] = AA_TABLE[matchedAminoAcidName];
     return aminoacidObj;
 }
 
