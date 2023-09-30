@@ -9,7 +9,7 @@ import { QuestionCircle } from 'react-bootstrap-icons';
 import HelpBox from './components/HelpBox';
 
 const App = () => {
-  //Help  state
+  //Help state
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
