@@ -84,6 +84,7 @@ h5 {
     font-family: Roboto Mono;
     font-weight: 300;
     font-size: 18px;
+
 }
 
 h6 {
@@ -93,6 +94,10 @@ h6 {
     color: #FEFDF8;
     // overriding default header line-height for text centering
     line-height: inherit;
+}
+
+span {
+    background-color: #dfddca;
 }
 
 .row-header {

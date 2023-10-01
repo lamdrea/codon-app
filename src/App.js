@@ -62,7 +62,7 @@ const App = () => {
       </Row>
       <Row className="row-cards">
         <Col md="2"></Col>
-        <Col><AminoAcidList aminoacid={aminoacid} setAminoAcid={setAminoAcid} /></Col>
+        <Col><AminoAcidList aminoacid={aminoacid} searchInput={searchInput} /></Col>
         <Col md="2"></Col>
       </Row>
     </Container>
