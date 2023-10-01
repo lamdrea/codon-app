@@ -9,7 +9,7 @@ $body-color: #18336D;
 $primary: #64C4CC;
 $secondary: #FFB3A1;
 $tertiary: #FCCD83;
-$darker-bg: #f7f1d3;
+$darker-bg: #eeebe2;
 $font-size-root: 16px;
 $grid-gutter-width: 1.75rem;
 $grid-breakpoints: (
@@ -98,7 +98,7 @@ h6 {
 }
 
 span {
-    background-color: #f0ead0;
+    background-color: $darker-bg;
 }
 
 p {

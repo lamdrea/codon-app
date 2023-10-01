@@ -1,5 +1,6 @@
 import Modal from 'react-bootstrap/Modal';
 import Accordion from 'react-bootstrap/Accordion';
+import helpGuide from '../img/guide.png';
 
 const HelpBox = ({ show, onHide }) => {
     return (
@@ -19,7 +20,8 @@ const HelpBox = ({ show, onHide }) => {
                                     <Accordion.Body>
                                         In the search box, type in <b>A</b>, <b>U</b>, <b>C</b>, or <b>G</b>, which 
                                         stand for the 4 mRNA nucleotides.
-                                        <br /><br />
+                                        <br />
+                                        <img src={helpGuide} alt="How to read the cards" class="center"/>
                                         This tool will then show you the amino acid that corresponds with the codon
                                         that you entered. On the card, you will find an image of the skeletal structure,
                                         other codons that code for that same amino acid, as well as the commonly used
@@ -30,7 +32,36 @@ const HelpBox = ({ show, onHide }) => {
 
                                 <Accordion.Item eventKey="1">
                                     <Accordion.Header>
-                                        Can I have more background info?
+                                        What is an amino acid?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        Amino acids are the building blocks that form polypeptides and ultimately proteins.
+                                        <br /><br />
+                                        There are 20 different types of amino acids that can be combined to make a protein
+                                        within the human body.
+                                        The sequence of amino acids determines each protein’s structure and specific
+                                        function—changing even a single amino acid in a sequence can affect the final product!
+                                        <br /><br />
+                                    </Accordion.Body>
+                                </Accordion.Item>
+
+                                <Accordion.Item eventKey="2">
+                                    <Accordion.Header>
+                                        What is a codon?
+                                    </Accordion.Header>
+                                    <Accordion.Body>
+                                        A codon is a sequence of three consecutive nucleotides in a DNA or RNA molecule that codes
+                                        for a specific amino acid. Certain codons signal the start or end of translation,
+                                        called start or stop codons.
+                                        <br /><br />
+                                        Here in our tool, we show mRNA codons, which consist of any combination of adenine (<b>A</b>), 
+                                        uracil (<b>U</b>), cytosine (<b>C</b>), or guanine (<b>G</b>).
+                                        <br /><br />
+                                    </Accordion.Body>
+
+                                    <Accordion.Item eventKey="3">
+                                    <Accordion.Header>
+                                        What role do codons and amino acids play in biology?
                                     </Accordion.Header>
                                     <Accordion.Body>
                                         Amino acids are the building blocks of proteins, which are essential for
@@ -46,35 +77,6 @@ const HelpBox = ({ show, onHide }) => {
                                         <br /><br />
                                     </Accordion.Body>
                                 </Accordion.Item>
-
-                                <Accordion.Item eventKey="2">
-                                    <Accordion.Header>
-                                        What is an amino acid?
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        Amino acids are the building blocks that form polypeptides and ultimately proteins.
-                                        <br /><br />
-                                        There are 20 different types of amino acids that can be combined to make a protein
-                                        within the human body.
-                                        The sequence of amino acids determines each protein’s structure and specific
-                                        function—changing even a single amino acid in a sequence can affect the final product!
-                                        <br /><br />
-                                    </Accordion.Body>
-                                </Accordion.Item>
-
-                                <Accordion.Item eventKey="3">
-                                    <Accordion.Header>
-                                        What is a codon?
-                                    </Accordion.Header>
-                                    <Accordion.Body>
-                                        A codon is a sequence of three consecutive nucleotides in a DNA or RNA molecule that codes
-                                        for a specific amino acid. Certain codons signal the start or end of translation,
-                                        called start or stop codons.
-                                        <br /><br />
-                                        Here in our tool, we show mRNA codons, which consist of any combination of adenine (A), 
-                                        uracil (U), cytosine (C), or guanine (G).
-                                        <br /><br />
-                                    </Accordion.Body>
                                 </Accordion.Item>
                             </Accordion>
                         </Modal.Body>
