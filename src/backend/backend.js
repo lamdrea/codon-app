@@ -58,22 +58,29 @@ function _fetch_aminoacids() {
 }
 
 /**
- * Fetch an amino acid based on codon through the lookup table. Then, search in the master table
+ * Dynamically fetch an amino acid based on codon through the lookup table. Then, search in the master table
  *  for the amino acid key and return the corresponding object.
- * @param {str} codon   a 3 letter input
- * @returns             the matching amino acid object
+ * @param {str} codonFirst    the first letter of the codon
+ * @param {str} codonSecond   the second letter of the codon
+ * @param {str} codonThird    the third letter of the codon
+ * @returns                   the matching amino acid object
  */
-function _fetch_aminoacid_by_codon(codon) {
-    var matchedAminoAcidName = '';
-    var aminoacidObj = {};
-
-    for (let i = 0; i < CODON2AA.length; i++) {
-        if (CODON2AA[i][0] === codon) {
-            matchedAminoAcidName = CODON2AA[i][1];
-            break;
+function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
+    var tempAAList = new Set([]); 
+    for (let [codon, aminoAcid] of CODON2AA) {
+        if ((codonFirst === codon[0] || codonFirst === "") &&
+            (codonSecond === codon[1] || codonSecond === "") &&
+            (codonThird === codon[2] || codonThird === "")) { 
+            tempAAList.add(aminoAcid);
         }
     }
-    aminoacidObj[matchedAminoAcidName] = AA_TABLE[matchedAminoAcidName];
+
+    //Change the set into array and sort it alphabetically
+    var aminoacidObj = {};
+    for (let aminoAcid of [...tempAAList].sort()) {
+        aminoacidObj[aminoAcid] = AA_TABLE[aminoAcid];
+    }
+
     return aminoacidObj;
 }
 

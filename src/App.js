@@ -9,7 +9,7 @@ import { QuestionCircle } from 'react-bootstrap-icons';
 import HelpBox from './components/HelpBox';
 
 const App = () => {
-  //Help  state
+  //Help state
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
@@ -19,19 +19,17 @@ const App = () => {
 
   //Keep track of search input and amino acid display in a state
   //Initalize with an object of all amino acids
-  const [searchInput, setSearchInput] = useState({0: '', 1: '', 2: ''});
-  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids()) 
+  const [searchInput, setSearchInput] = useState({ 0: '', 1: '', 2: '' });
+  const [aminoacid, setAminoAcid] = useState(_fetch_aminoacids())
 
   useEffect(() => {
-    /**
-     * When searchInput length is 3, fetch the matching amino acid. Otherwise, reset the list
-     *  to include all amino acids.
-     */
-    if (!Object.values(searchInput).includes('') && Object.keys(searchInput).length === 3) {
-      setAminoAcid(_fetch_aminoacid_by_codon(Object.values(searchInput).join('')));
+    //Trigger whenever there is any valid input in the boxes
+    if (Object.values(searchInput).some(Boolean)) {
+      setAminoAcid(_fetch_aminoacid_by_codon(searchInput[0], searchInput[1], searchInput[2]));
     } else {
       setAminoAcid(_fetch_aminoacids());
     }
+
 
   }, [searchInput]);
 
@@ -64,8 +62,12 @@ const App = () => {
       </Row>
       <Row className="row-cards">
         <Col md="2"></Col>
-        <Col><AminoAcidList aminoacid={aminoacid} setAminoAcid={setAminoAcid} /></Col>
+        <Col><AminoAcidList aminoacid={aminoacid} searchInput={searchInput} /></Col>
         <Col md="2"></Col>
+      </Row>
+      <Row className="row-footer">
+        <Col>
+        </Col>
       </Row>
     </Container>
   );
