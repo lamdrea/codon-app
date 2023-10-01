@@ -63,12 +63,10 @@ function _fetch_aminoacids() {
  * @param {str} codonFirst    the first letter of the codon
  * @param {str} codonSecond   the second letter of the codon
  * @param {str} codonThird    the third letter of the codon
- * @returns                 the matching amino acid object
+ * @returns                   the matching amino acid object
  */
 function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
     var tempAAList = new Set([]); 
-    var aminoacidObj = {};
-
     for (let [codon, aminoAcid] of CODON2AA) {
         if ((codonFirst === codon[0] || codonFirst === "") &&
             (codonSecond === codon[1] || codonSecond === "") &&
@@ -77,7 +75,9 @@ function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
         }
     }
 
-    for (let aminoAcid of tempAAList) {
+    //change the set into array and sort it
+    var aminoacidObj = {};
+    for (let aminoAcid of [...tempAAList].sort()) {
         aminoacidObj[aminoAcid] = AA_TABLE[aminoAcid];
     }
 
