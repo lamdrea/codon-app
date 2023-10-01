@@ -75,7 +75,7 @@ function _fetch_aminoacid_by_codon(codonFirst, codonSecond, codonThird) {
         }
     }
 
-    //change the set into array and sort it
+    //Change the set into array and sort it alphabetically
     var aminoacidObj = {};
     for (let aminoAcid of [...tempAAList].sort()) {
         aminoacidObj[aminoAcid] = AA_TABLE[aminoAcid];
