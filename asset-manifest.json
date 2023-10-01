@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/codon-app/static/css/main.f9910a57.css",
-    "main.js": "/codon-app/static/js/main.7faf47ef.js",
+    "main.css": "/codon-app/static/css/main.2dca64ba.css",
+    "main.js": "/codon-app/static/js/main.cd1e624f.js",
+    "static/media/guide.png": "/codon-app/static/media/guide.4f0dfa436705eaefb5d2.png",
     "index.html": "/codon-app/index.html",
-    "main.f9910a57.css.map": "/codon-app/static/css/main.f9910a57.css.map",
-    "main.7faf47ef.js.map": "/codon-app/static/js/main.7faf47ef.js.map"
+    "main.2dca64ba.css.map": "/codon-app/static/css/main.2dca64ba.css.map",
+    "main.cd1e624f.js.map": "/codon-app/static/js/main.cd1e624f.js.map"
   },
   "entrypoints": [
-    "static/css/main.f9910a57.css",
-    "static/js/main.7faf47ef.js"
+    "static/css/main.2dca64ba.css",
+    "static/js/main.cd1e624f.js"
   ]
 }
