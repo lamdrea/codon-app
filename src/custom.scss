@@ -9,10 +9,11 @@ $body-color: #18336D;
 $primary: #64C4CC;
 $secondary: #FFB3A1;
 $tertiary: #FCCD83;
-$darker-bg: #F7F5EA;
+$darker-bg: #f7f1d3;
 $font-size-root: 16px;
 $grid-gutter-width: 1.75rem;
 $grid-breakpoints: (
+    xs: 0px,
     sm: 576px,
     md: 768px,
     lg: 1120px,
@@ -97,11 +98,24 @@ h6 {
 }
 
 span {
-    background-color: #dfddca;
+    background-color: #f0ead0;
+}
+
+p {
+    text-align: center;
+    font-weight:100;
+    font-size: 16px;
+    margin: auto;
 }
 
 .row-header {
     background-color: $primary;
+    padding-top: $spacer * 3;
+    padding-bottom: $spacer * 3;
+}
+
+.row-footer {
+    background-color: $body-bg;
     padding-top: $spacer * 3;
     padding-bottom: $spacer * 3;
 }
@@ -186,6 +200,7 @@ span {
 .img-AA {
     max-width: 180px;
     max-height: 80px;
+    mix-blend-mode: multiply;
 }
 
 .card-footer {
@@ -202,15 +217,15 @@ span {
 }
 
 .help-icon:hover {
-    color: white;
-    margin-top: 0.2em;
+    color: #acf6fd;
     cursor: pointer;
-    transition: all .5s;
+    transition: all .25s;
 }
 
 .modal {
     backdrop-filter: blur(5px);
     overflow-y: hidden;
+    transition: all .25s;
 }
 
 .modal-backdrop {

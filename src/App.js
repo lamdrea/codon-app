@@ -65,6 +65,10 @@ const App = () => {
         <Col><AminoAcidList aminoacid={aminoacid} searchInput={searchInput} /></Col>
         <Col md="2"></Col>
       </Row>
+      <Row className="row-footer">
+        <Col>
+        </Col>
+      </Row>
     </Container>
   );
 };
