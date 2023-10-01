@@ -8,11 +8,11 @@ const HIGHLIGHT_INDICATOR = "*"
 /**
  * Given an (object) list of amino acids to display, along with the current search input,
  * run through the codons to mark which letters need to be highlighted.
- * Dynamically highlights all matches unless there is only one exact match.
+ * Dynamically marks all matches unless there is only one exact match.
  * @param {Object} aminoacidInfo     An object containing all the amino acids to be displayed
  * @param {Object} searchInput       An object containing the search input, where keys 0-2 correspond to a letter
  * @returns                          A nested array of letters for each codon letter and space, with or without an indicator in front
- *                                   [['*g', 'c', 'u', ' ', '*g', 'c', 'c', ' '...]]
+ *                                   to be highlighted: [['*g', 'c', 'u', ' '], ['*g', 'c', 'c', ' '...]]
  */
 const codonListWithHighlights = (aminoacidInfo, searchInput) => {
     const codonFirst = searchInput[0];
@@ -23,7 +23,7 @@ const codonListWithHighlights = (aminoacidInfo, searchInput) => {
     const searchInputArr = Object.values(searchInput);
     if (searchInputArr.every(Boolean)) {
         return aminoacidInfo.codon.map((codon) => {
-            if (searchInputArr.join("") === codon) {
+            if (searchInputArr.join("") === codon) {  //exact match
                 return [
                     `${HIGHLIGHT_INDICATOR}${codon[0]}`,
                     `${HIGHLIGHT_INDICATOR}${codon[1]}`,
@@ -31,8 +31,8 @@ const codonListWithHighlights = (aminoacidInfo, searchInput) => {
                     " " //space delimiter for presentation
                 ];
             }
-            else {
-                return (codon + " ").split("");
+            else { 
+                return (codon + " ").split(""); //add codons without indicator
             }
         })
     }
